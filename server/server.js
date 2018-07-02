@@ -18,4 +18,4 @@ io.on('connection', socket => {
 
 io.listen(server);
 server.listen(8888);
-console.log('Socket Server running at 8888 port.')
+console.log('Socket Server running at 8888 port.');
