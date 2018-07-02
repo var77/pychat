@@ -2,7 +2,6 @@ const io = require('socket.io')();
 const http = require('http');
 
 let server = http.createServer();
-let nsp = io.of('/my-namespace');
 
 io.on('connection', socket => {
  console.log(socket.id, 'connected');
@@ -19,3 +18,4 @@ io.on('connection', socket => {
 
 io.listen(server);
 server.listen(8888);
+console.log('Socket Server running at 8888 port.');
